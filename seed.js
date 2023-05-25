@@ -56,7 +56,7 @@ const syncAndSeed = async () => {
             Souvenir.create(),
         ]);
 
-        db.close();
+        // db.close();
     } catch (error) {
         console.log(error);
         db.close();

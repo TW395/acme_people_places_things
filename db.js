@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const { STRING } = Sequelize;
-const db = new Sequelize('postgres://postgres:postgres@localhost:5432/acme_people_places_things'); //, { logging: false }
+const db = new Sequelize('postgres://postgres:postgres@localhost:5432/acme_people_places_things', { logging: false }); //, { logging: false }
 
 const Person = db.define('Person', {
     name : {
